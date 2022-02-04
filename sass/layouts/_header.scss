@@ -1,12 +1,25 @@
 .header {
   background-image: url("/images/bg-header-desktop.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top center;
   background-size: cover;
 
   .container {
-    padding-top: 150px;
-
+    padding: 9.375rem 0rem 6.25rem 0rem;
     @include flex(column, center, center);
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__desc {
+    margin: 20px 0px 40px 0px;
+    max-width: 625px;
+    text-align: center;
   }
 }
