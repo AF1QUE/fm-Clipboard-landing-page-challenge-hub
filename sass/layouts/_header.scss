@@ -1,0 +1,12 @@
+.header {
+  background-image: url("/images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  .container {
+    padding-top: 150px;
+
+    @include flex(column, center, center);
+  }
+}
