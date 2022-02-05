@@ -6,11 +6,11 @@
 
   .container {
     padding: 9.375rem 0rem 6.25rem 0rem;
-    @include flex(column, center, center);
+    @include flex(column, center, center, no-wrap);
   }
 
   &__logo {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   &__title {
@@ -18,8 +18,17 @@
   }
 
   &__desc {
-    margin: 20px 0px 40px 0px;
-    max-width: 625px;
+    margin: 1.25rem 0rem 2.5rem 0rem;
+    max-width: 39.0625rem;
     text-align: center;
+  }
+
+  &__btn-group {
+    @include flex(row, space-around, center);
+    width: 500px;
+
+    @media (max-width: 480px) {
+      @include flex(column, space-between, center, wrap);
+    }
   }
 }
