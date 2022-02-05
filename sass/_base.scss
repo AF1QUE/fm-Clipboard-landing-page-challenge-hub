@@ -8,16 +8,18 @@ $grayishBlue: hsl(201, 11%, 66%);
 *,
 *::after,
 *::before {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 71.25rem;
-  margin: 0rem auto;
+body {
+  position: relative;
+  overflow-x: hidden;
+}
 
-  @include breakpoint(phone) {
-    background-color: red;
-  }
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  
 }

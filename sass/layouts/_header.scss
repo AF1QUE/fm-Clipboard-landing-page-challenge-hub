@@ -26,9 +26,5 @@
   &__btn-group {
     @include flex(row, space-around, center);
     width: 500px;
-
-    @media (max-width: 480px) {
-      @include flex(column, space-between, center, wrap);
-    }
   }
 }
