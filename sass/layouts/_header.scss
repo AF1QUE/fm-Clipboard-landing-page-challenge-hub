@@ -7,6 +7,10 @@
   .container {
     padding: 9.375rem 0rem 6.25rem 0rem;
     @include flex(column, center, center, no-wrap);
+
+    @include media(">=phone", "<tablet") {
+      padding: 6.25rem 0rem 6.25rem 0rem;
+    }
   }
 
   &__logo {
@@ -26,5 +30,14 @@
   &__btn-group {
     @include flex(row, space-around, center);
     width: 500px;
+
+    @include media(">=phone", "<tablet") {
+      @include flex(column, center, center);
+      width: 100%;
+    }
+  }
+
+  .btn--ios {
+    margin-bottom: 20px;
   }
 }

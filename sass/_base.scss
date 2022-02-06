@@ -21,5 +21,8 @@ body {
 .container {
   max-width: 1140px;
   margin: 0px auto;
-  
+
+  @include media(">=phone", "<tablet") {
+    max-width: 350px;
+  }
 }
