@@ -9,7 +9,7 @@
     @include flex(column, center, center, no-wrap);
 
     @include media(">=phone", "<tablet") {
-      padding: 6.25rem 0rem 6.25rem 0rem;
+      padding: 6.25rem 0rem 4.6875rem 0rem;
     }
   }
 
@@ -35,9 +35,11 @@
       @include flex(column, center, center);
       width: 100%;
     }
-  }
 
-  .btn--ios {
-    margin-bottom: 20px;
+    .btn--ios {
+      @include media(">=phone", "<tablet") {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

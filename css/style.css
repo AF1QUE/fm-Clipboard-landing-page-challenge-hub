@@ -43,7 +43,6 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
   .heading--primary {
     font-size: 2.25rem;
-    text-align: center;
   }
 }
 
@@ -55,7 +54,6 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
   .heading--secondary {
     font-size: 1.875rem;
-    text-align: center;
   }
 }
 
@@ -67,7 +65,6 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
   .heading--tertiary {
     font-size: 1.625rem;
-    text-align: center;
   }
 }
 
@@ -166,7 +163,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header .container {
-    padding: 6.25rem 0rem 6.25rem 0rem;
+    padding: 6.25rem 0rem 4.6875rem 0rem;
   }
 }
 
@@ -223,7 +220,82 @@ body {
   }
 }
 
-.header .btn--ios {
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__btn-group .btn--ios {
+    margin-bottom: 20px;
+  }
+}
+
+.services .container {
+  padding: 75px 0px;
+}
+
+.services__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-bottom: 80px;
+}
+
+.services__info__title {
+  text-align: center;
   margin-bottom: 20px;
+}
+
+.services__info__desc {
+  text-align: center;
+  max-width: 700px;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-left: calc(-50vw + 45%);
+}
+
+.services__content__img {
+  width: 85%;
+}
+
+.services__content__group {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.services .service {
+  margin-bottom: 60px;
+}
+
+.services .service__title {
+  margin-bottom: 20px;
+}
+
+.services .service__desc {
+  max-width: 500px;
 }
 /*# sourceMappingURL=style.css.map */
