@@ -1,0 +1,14 @@
+.features {
+  .container {
+    text-align: center;
+    padding: 0px 0px 75px 0px;
+  }
+
+  &__group {
+    @include flex(row, space-between, center);
+  }
+
+  .feature {
+      
+  }
+}
