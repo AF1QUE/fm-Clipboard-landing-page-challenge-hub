@@ -1,0 +1,37 @@
+.c2a {
+  .container {
+    padding: 9.375rem 0rem 6.25rem 0rem;
+    @include flex(column, center, center, no-wrap);
+
+    @include media(">=phone", "<tablet") {
+      padding: 6.25rem 0rem 4.6875rem 0rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  &__btn-group {
+    @include flex(row, space-around, center);
+    width: 500px;
+
+    @include media(">=phone", "<tablet") {
+      @include flex(column, center, center);
+      width: 100%;
+    }
+
+    .btn--ios {
+      @include media(">=phone", "<tablet") {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

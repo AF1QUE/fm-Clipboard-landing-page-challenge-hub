@@ -8,5 +8,20 @@
     @include media(">=phone", "<tablet") {
       @include flex(column, flex-start, center, wrap);
     }
+
+    .partner {
+      margin: 40px 0px;
+
+      @include media(">=phone", "<tablet") {
+        
+        &:first-child {
+          margin-top: 0px;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
   }
 }

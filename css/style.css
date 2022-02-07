@@ -529,4 +529,98 @@ body {
         flex-wrap: wrap;
   }
 }
+
+.partners__group .partner {
+  margin: 40px 0px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .partners__group .partner:first-child {
+    margin-top: 0px;
+  }
+  .partners__group .partner:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.c2a .container {
+  padding: 9.375rem 0rem 6.25rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .c2a .container {
+    padding: 6.25rem 0rem 4.6875rem 0rem;
+  }
+}
+
+.c2a__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.c2a__desc {
+  margin-bottom: 40px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.c2a__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  width: 500px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .c2a__btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .c2a__btn-group .btn--ios {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
