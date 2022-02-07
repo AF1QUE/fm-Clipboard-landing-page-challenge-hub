@@ -1,1 +1,12 @@
+.partners {
+  .container {
+    padding: 75px 0px;
+  }
+  &__group {
+    @include flex(row, space-between);
 
+    @include media(">=phone", "<tablet") {
+      @include flex(column, flex-start, center, wrap);
+    }
+  }
+}
